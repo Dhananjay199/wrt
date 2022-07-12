@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>WRATH</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.menu-btn').click(function(){
+                    $('ul').toggleClass('show')
+                });
+            });
+        </script>
+
+
+</head>
+<body>
+
+<div class="bg_container">
+ 
+  <img id="bkimg" src="/menubutton/images/UE5.jpg" alt="UE5"> 
+  <div class="text-container">
+    <div id="text1">
+      <p>Augmented Reality</p>
+    </div>
+    <div id="text2">
+      <p>VFX AND SIMULATIONS</p>
+    </div>
+  
+    <div id="text3">
+      <p>GAMIFICATION</p>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+<header>
+  <!--                      menu animated            -->
+  
+  <div class="menu-btn">
+    <div class="menu-btn__burger"></div>
+  </div>
+  <script type="text/javascript" src="/menubutton/main.js"></script>
+
+  <!--            menu animated-->
+    <img id="blogo" src="/menubutton/images/w2grcp.png" height="60px" width="60px" alt="WDevs"> <br>
+    <a href="#" class="logo">Wrath <h9>[||]</h9> Devs</a>
+
+<ul>
+
+  <li><a class="navop" href="/menubutton/index.html">Home</a></li>
+
+  <li><a class="navop" href="/menubutton/index1.html">Industries</a></li>
+  <li><a class="navop" href="/menubutton/index2.html">Tech</a></li>
+  <li><a class="navop" href="/menubutton/index3.html">Projects</a></li>
+  
+  <li><a class="navop" href="/menubutton/index4.html">About</a></li>
+  <li><a class="navop" href="/menubutton/index5.html">Contact</a></li>
+
+</ul>
+
+
+</header>
+
+<section class="banner"></section>
+
+<script type="text/javascript">
+window.addEventListener("scroll",function()
+{
+   var header =document.querySelector("header");
+  header.classList.toggle("sticky",window.scrollY > 0)
+});
+</script>
+
+<div class="tdswiper">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/menubutton/images/Hennessey_Venom_F5_2019_360_720_50-40.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 40,
+      stretch: -350,
+      depth: 850,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    loop:true,
+    autoplay:
+    {
+      delay:3000,disableOnInteraction:false,
+    }
+  });
+</script>
+
+
+<footer>
+  <div class="footer-content">
+    <h3>WRATH [||] DEVS</h3>
+    <br><br>
+    <marquee behavior="alternate" direction="right"><p class="quote"> Empowering Curiosity For Creativiy</p></marquee>
+
+      <ul class="socials">
+        <li><a href="#" ><i id="onsocio" class="fa fa-facebook"></i></a></li>
+        <li><a href="#" ><i id="onsocio" class="fa fa-twitter"></i></a></li>
+        <li><a href="#" ><i id="onsocio" class="fa fa-google-plus"></i></a></li>
+        
+        <li><a href="#" ><i id="onsocio" class="fa fa-youtube"></i></a></li>
+        
+      </ul>
+
+      <div class="footer-bottom">
+        <p>&copy; Copyright  2022 , WRATH&trade; [||] DEVS <h2>&reg;</h2> &nbsp; All Rights Reserved.  
+          <br>
+          Web-Design Courtesy by Dhananjay_SK
+        </p>
+
+
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
